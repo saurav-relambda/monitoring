@@ -22,6 +22,6 @@ jobs:
 
       - name: Run metrics server
         run: |
-          echo "Starting fake build and metrics exporter..."
+          echo "Starting build and metrics exporter..."
           python metrics_server.py &
           sleep 30   # keep job alive so Prometheus can scrape
